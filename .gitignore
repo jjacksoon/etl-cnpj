@@ -1,6 +1,21 @@
+# Dados (O seu Data Lake local)
 data/
+
+# Logs e arquivos temporários do Airflow
 logs/
 plugins/
+*.log
+
+# Python
 __pycache__/
+*.pyc
+.venv/
+.env
+
+# Arquivos de dados brutos (evita que vazem para o git caso estejam fora da pasta data)
 *.zip
 *.csv
+*.parquet
+
+# Docker
+.DS_Store
